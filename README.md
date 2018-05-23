@@ -1,6 +1,6 @@
 This project shows how to use Drools, one of the most popular Business Rules Engine, with WebLogic application servers.
 
-Required dependencies:
+#Required dependencies:
 
 <dependency>
   <groupId>org.drools</groupId>
