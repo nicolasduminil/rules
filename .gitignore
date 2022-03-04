@@ -58,3 +58,7 @@ local.properties
 **/node_modules
 .dm/
 **/webapp
+
+# IntelliJ IDEA
+*.iml
+.idea/*

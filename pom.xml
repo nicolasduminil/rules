@@ -6,22 +6,35 @@
   <packaging>war</packaging>
   <name>rules-manager :: WAR module</name>
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <wl_home>/home/nicolas/oracle/wls1411</wl_home>
   </properties>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.oracle.weblogic</groupId>
+        <artifactId>weblogic-server-pom</artifactId>
+        <version>14.1.1-0-0</version>
+        <type>pom</type>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <dependencies>
-    <dependency>
-      <groupId>com.oracle.weblogic</groupId>
-      <artifactId>wlfullclient</artifactId>
-      <version>12.2.1.2.0</version>
-      <scope>provided</scope>
-    </dependency>
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
-      <version>7.0</version>
+      <version>8.0</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>weblogic</groupId>
+      <artifactId>wlthint3client</artifactId>
+      <version>14.1.1-0-0</version>
+      <scope>system</scope>
+      <systemPath>${wl_home}/wlserver/server/lib/wlthint3client.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.drools</groupId>
@@ -59,7 +72,7 @@
       <plugin>
         <groupId>com.oracle.weblogic</groupId>
         <artifactId>weblogic-maven-plugin</artifactId>
-        <version>12.2.1-2-0</version>
+        <version>12.2.1-0-0</version>
         <configuration>
           <adminurl>t3://localhost:7001</adminurl>
           <user>nicolas</user>
