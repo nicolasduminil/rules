@@ -38,5 +38,5 @@ This project shows how to use Drools, one of the most popular Business Rules Eng
 cd rules                                             #move to the home directory
 mvn –DskipTests clean install                        #build the WAR file while skipping the test phase
 mvn com.oracle.weblogic:weblogic-maven-plugin:deploy #deploy the WAR file on the local WebLogic server
-mvn test                                             #run the unit test  e
+mvn test                                             #run the unit tests
 ```
