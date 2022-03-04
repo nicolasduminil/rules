@@ -4,6 +4,8 @@ import javax.ejb.*;
 
 import de.telefonica.rules_management.facts.*;
 
+import java.io.*;
+
 @Local
 public interface KieFacadeLocal
 {

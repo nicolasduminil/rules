@@ -4,7 +4,6 @@ import de.telefonica.rules_management.facade.*;
 import de.telefonica.rules_management.facts.*;
 import de.telefonica.rules_management.facts.Customer.*;
 import org.junit.*;
-import org.kie.api.*;
 
 import javax.naming.*;
 import java.util.*;
@@ -13,10 +12,10 @@ import static org.junit.Assert.*;
 
 public class TestFacade
 {
-  private KieFacadeRemote kieFacadeRemote;
+  private static KieFacadeRemote kieFacadeRemote;
 
-  @Before
-  public void test() throws Exception
+  @BeforeClass
+  public static void before() throws Exception
   {
     Hashtable<String, String> props = new Hashtable<>();
     props.put(Context.INITIAL_CONTEXT_FACTORY, "weblogic.jndi.WLInitialContextFactory");

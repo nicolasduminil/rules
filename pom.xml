@@ -26,7 +26,7 @@
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
-      <version>8.0</version>
+      <version>8.0.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -39,17 +39,17 @@
     <dependency>
       <groupId>org.drools</groupId>
       <artifactId>drools-compiler</artifactId>
-      <version>7.5.0.Final</version>
+      <version>7.59.0.Final</version>
     </dependency>
     <dependency>
       <groupId>org.drools</groupId>
       <artifactId>drools-decisiontables</artifactId>
-      <version>7.5.0.Final</version>
+      <version>7.59.0.Final</version>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-ci</artifactId>
-      <version>7.5.0.Final</version>
+      <version>7.59.0.Final</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>

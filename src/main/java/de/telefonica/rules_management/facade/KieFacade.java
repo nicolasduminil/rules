@@ -11,8 +11,10 @@ import org.kie.internal.io.*;
 
 import de.telefonica.rules_management.facts.*;
 
+import java.io.*;
+
 @Stateless
-public class KieFacade implements KieFacadeLocal, KieFacadeRemote
+public class KieFacade implements KieFacadeLocal, KieFacadeRemote, Serializable
 {
   private KieSession kieSession;
   
