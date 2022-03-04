@@ -3,24 +3,21 @@ This project shows how to use Drools, one of the most popular Business Rules Eng
 #Required dependencies:
 
 ```
-```
-
-```
 <dependency>
   <groupIdorg.drools</groupId
   <artifactIddrools-compiler</artifactId
   <version7.5.0.Final</version
-</dependency
-<dependency
+</dependency>
+<dependency>
   <groupIdorg.drools</groupId
   <artifactIddrools-decisiontables</artifactId
   <version7.5.0.Final</version
-</dependency
-<dependency
+</dependency>
+<dependency>
   <groupIdorg.kie</groupId
   <artifactIdkie-ci</artifactId
   <version7.5.0.Final</version
-</dependency
+</dependency>
 
 #Deploy, run and test
 cd rules                                             #move to the home directory
