@@ -3,21 +3,36 @@ This project shows how to use Drools, one of the most popular Business Rules Eng
 #Required dependencies:
 
 ```
+...
 <dependency>
-  <groupIdorg.drools</groupId
-  <artifactIddrools-compiler</artifactId
-  <version7.5.0.Final</version
+  <groupId>javax</groupId>
+  <artifactId>javaee-api</artifactId>
+  <version>8.0</version>
+  <scope>provided</scope>
 </dependency>
 <dependency>
-  <groupIdorg.drools</groupId
-  <artifactIddrools-decisiontables</artifactId
-  <version7.5.0.Final</version
+  <groupId>weblogic</groupId>
+  <artifactId>wlthint3client</artifactId>
+  <version>14.1.1-0-0</version>
+  <scope>system</scope>
+  <systemPath>${wl_home}/wlserver/server/lib/wlthint3client.jar</systemPath>
 </dependency>
 <dependency>
-  <groupIdorg.kie</groupId
-  <artifactIdkie-ci</artifactId
-  <version7.5.0.Final</version
+  <groupId>org.drools</groupId>
+  <artifactId>drools-compiler</artifactId>
+  <version>7.5.0.Final</version>
 </dependency>
+<dependency>
+  <group>Idorg.drools</groupId>
+  <artifactId>drools-decisiontables</artifactId>
+  <version>7.5.0.Final</version>
+</dependency>
+<dependency>
+  <groupId>org.kie</groupId>
+  <artifactId>kie-ci</artifactId>
+  <version>7.5.0.Final</version>
+</dependency>
+...
 
 #Deploy, run and test
 cd rules                                             #move to the home directory
