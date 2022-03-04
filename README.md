@@ -1,4 +1,5 @@
-#Rules
+# Rules
+
 This project shows how to use Drools, one of the most popular Business Rules Engine, with WebLogic application servers.
 
 Most of the applications implement dozens of business rules based on which validation and other types of controls are performed.
@@ -45,7 +46,7 @@ may be used by clients running outside the container.
 
 In order to fire rules, both `KieFacade` (local and remote) provide the `fireRules` method.
 
-##Building and running the sample
+## Building and running the sample
 
 A script named build.sh is provided in order to automatize the build, install and deploy process. This sample being a
 WebLogic based one, a local WebLogic Server installation is required. In order to use the build.sh script, you need to
